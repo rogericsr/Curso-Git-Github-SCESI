@@ -32,4 +32,7 @@ Despues de eso Linus Torvalds busco alternativas pero ninguno terminaba de agrad
 * **Staging Area:** El área de preparación técnica donde se seleccionan los cambios específicos mediante un index antes de ser confirmados.
 * **Local Repository:** El historial definitivo donde los cambios reciben un identificador único (**SHA-1 hash**).
 
-## Comandos de Recuperacion y Gestion
+### Comandos de Recuperacion y Gestion
+Git permite manipular el estado de los archivos y gestionar qué elementos deben ser ignorados por el sistema.
+ * **Restoring:** Uso de git restore `<file>` para descartar cambios en el directorio de trabajo o git restore --staged `<file>` para sacar archivos del área de preparación.
+ * **Ignored Files:** Configuración del archivo `.gitignore` para excluir artefactos del sistema, dependencias o variables de entorno del seguimiento de Git.
