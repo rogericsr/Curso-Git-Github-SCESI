@@ -36,3 +36,7 @@ Despues de eso Linus Torvalds busco alternativas pero ninguno terminaba de agrad
 Git permite manipular el estado de los archivos y gestionar qué elementos deben ser ignorados por el sistema.
  * **Restoring:** Uso de git restore `<file>` para descartar cambios en el directorio de trabajo o git restore --staged `<file>` para sacar archivos del área de preparación.
  * **Ignored Files:** Configuración del archivo `.gitignore` para excluir artefactos del sistema, dependencias o variables de entorno del seguimiento de Git.
+### Buenas Practicas
+La calidad del historial depende de seguir estándares de mensajes claros y cambios con un único propósito lógico.
+ * **Atomic Commits:** Cada confirmación debe representar un cambio pequeño, completo y funcional, evitando "bloques" masivos de cambios no relacionados.
+ * **Structure:** Los mensajes deben usar el modo imperativo (ej. "Add" en lugar de "Added"), no exceder los 50 caracteres y utilizar prefijos como feat, fix, docs, refactor, etc..
