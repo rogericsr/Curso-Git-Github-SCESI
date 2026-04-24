@@ -47,16 +47,28 @@ La calidad del historial depende de seguir estándares de mensajes claros y camb
 Git es la herramienta que crea los puntos de guardado en nuestra PC, pero GitHub es como la "nube" o red social donde guardamos y compartimos esos puntos con otros.
 
 ### Llaves SSH: Entrada sin contraseñas
-Usar HTTPS es pesado porque te pide contraseña a cada rato. Configurar una llave SSH es como darle a GitHub una "llave digital" de tu casa (tu PC) para que te deje pasar automáticamente sin preguntar quién eres cada vez que subes algo.
+Usar *HTTPS* es pesado porque te pide contraseña a cada rato. Configurar una llave SSH es como darle a GitHub una "llave digital" de tu casa (tu PC) para que te deje pasar automáticamente sin preguntar quién eres cada vez que subes algo.
 
-#### Configuracion SSH
-En la terminal ejecutamos los siguientes comandos desde tu terminal si estas en Linux o desde Git Bash si estas en Windows
++ **Configuracion SSH**: En la terminal ejecutamos los siguientes comandos desde tu terminal si estas en Linux o desde Git Bash si estas en Windows
 ```bash
-ssh-keygen -t ed25519 -C “tu-correo@email.com”
+~ ssh-keygen -t ed25519 -C “tu-correo@email.com”
 
-cat ~/.ssh/id_ed25519.pub
+~ cat ~/.ssh/id_ed25519.pub
 
 #Copias el contenido del anteroir comando y te diriges a github donde te diriges a tu perfil → Settings y luego SSH y GPG Keys y luego “New SSH Key” (1) y pegas tu key, le das un nombre para tu PC y click en “Add SSH Key”. (2)
 
-ssh -T git@github.com
+~ ssh -T git@github.com
 ```
+
+### Conectar un repositorio local de Git existente con uno en Github
+```bash
+git remote add origin git@github.com:TuUser/TuRepo.git 
+
+# Remote es la URL que apunta al servidor externo es decir a tu repositorio externo creado en Github y Origin es simplemente el apodo(nickname) que git le da por defecto a esa URL
+
+git branch -M main
+
+git push -u origin main
+```
+ 
+NOTA: PARA ESTO YA TIENES QUE HABER INICIALIZADO EL REPO. LOCAL `git init` Y TENER UN COMMIT INICIAL AL MENOS `git add . + git commit -m “Initial commit”`
