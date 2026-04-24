@@ -72,3 +72,15 @@ git push -u origin main
 ```
  
 NOTA: PARA ESTO YA TIENES QUE HABER INICIALIZADO EL REPO. LOCAL `git init` Y TENER UN COMMIT INICIAL AL MENOS `git add . + git commit -m “Initial commit”`
+### Comandos para "Viajar" a la nube (Push & Pull)
+
+Para mover código usamos dos movimientos: push es para "empujar" tus cambios desde tu compu hacia GitHub, y pull es para "traer" o bajar lo que está en la nube a tu carpeta local. Es como subir y bajar archivos de un Drive, pero con esteroides.
+
++ **Subir mis cambios:**
+```bash
+git push origin <rama>
+```
++ **Bajar los cambios hechos:**
+```bash
+git pull origin <rama>
+```
