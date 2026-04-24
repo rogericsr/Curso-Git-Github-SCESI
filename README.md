@@ -40,3 +40,8 @@ Git permite manipular el estado de los archivos y gestionar qué elementos deben
 La calidad del historial depende de seguir estándares de mensajes claros y cambios con un único propósito lógico.
  * **Atomic Commits:** Cada confirmación debe representar un cambio pequeño, completo y funcional, evitando "bloques" masivos de cambios no relacionados.
  * **Structure:** Los mensajes deben usar el modo imperativo (ej. "Add" en lugar de "Added"), no exceder los 50 caracteres y utilizar prefijos como feat, fix, docs, refactor, etc..
+
+## Clase 3
+
+### GitHub: El hogar de nuestro código
+Git es la herramienta que crea los puntos de guardado en nuestra PC, pero GitHub es como la "nube" o red social donde guardamos y compartimos esos puntos con otros.
