@@ -87,3 +87,27 @@ git pull origin <rama>
 
 ### Gestión de Remotos y Visualización
 Antes de mover archivos, es vital saber a dónde apuntan nuestros "túneles" de conexión. El comando `git remote` nos permite administrar estas direcciones, verificar las URLs configuradas con el modo *verbose* (-v) y corregirlas si cometimos algún error al escribirlas inicialmente
+
+### Multi-SSH y Seguridad de Cuentas
+Si manejas varias cuentas (ej. personal y de la UMSS), necesitas una llave para cada "puerta". Configurar múltiples llaves SSH evita conflictos de identidad. Esto se logra generando archivos de llave con nombres distintos y organizándolos en un archivo config para que Git sepa qué identidad usar en cada repositorio automáticamente
+
++ Paso 1. Generamos el sshkey en con
+otro nombre:
+```bash
+ssh-keygen -t ed25519 -C
+"micorreo@gmail.com" -f ~/.ssh/id_miname
+```
++ Paso 2. Creamos un archivo config
+para que no choquen las key:
+```bash
+# Cuenta Personal (la de siempre)
+Host github.com
+HostName github.com
+User git
+IdentityFile ~/.ssh/id_ed25519
+# Cuenta del otro correo
+Host github-miname
+HostName github.com
+User git
+IdentityFile ~/.ssh/id_miname
+```
