@@ -111,3 +111,18 @@ HostName github.com
 User git
 IdentityFile ~/.ssh/id_miname
 ```
+### Navegación en el Tiempo y Estado Desacoplado
+El comando checkout es nuestro "viajero del tiempo". Nos permite saltar entre ramas o incluso visitar un punto exacto del pasado usando un *hash*. Cuando viajamos a un commit específico sin una rama, entramos en estado **Detached HEAD**; aquí somos "espectadores" y cualquier cambio se perderá si no creamos una nueva rama para "encarnar" esos avances.
+
+Para ir atras debes hacer:
+`git checkout <hash_antiguo>`
+
+Y para volver al ultimo hash de la rama
+`git checkout <rama>`
+
+Si hiciste algo aca (como un commit) desaparece
+salvo que hagas:
+```bash
+git checkout <hash_commit_creado>
+git checkout -b rama_nueva
+```
