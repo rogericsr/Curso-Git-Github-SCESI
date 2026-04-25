@@ -84,3 +84,6 @@ git push origin <rama>
 ```bash
 git pull origin <rama>
 ```
+
+### Gestión de Remotos y Visualización
+Antes de mover archivos, es vital saber a dónde apuntan nuestros "túneles" de conexión. El comando `git remote` nos permite administrar estas direcciones, verificar las URLs configuradas con el modo *verbose* (-v) y corregirlas si cometimos algún error al escribirlas inicialmente
