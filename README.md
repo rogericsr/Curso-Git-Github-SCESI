@@ -132,3 +132,7 @@ git checkout -b rama_nueva
 
 Las ramas son bifurcaciones que nos permiten crear caminos paralelos para la evolución del código. Esto es fundamental para trabajar en equipo, ya que podemos listar las ramas con git branch, crear nuevas para tareas específicas y borrar aquellas que ya no necesitemos una vez fusionadas.
 * **Comandos:** git branch (listar), git branch `<name>` (crear), git branch -D `<name>` (borrar).
+
+### Git merge
+Para unir el trabajo de dos ramas usamos git merge. Git puede hacerlo de forma automática si no hay conflictos (Fast-forward), pero lo ideal es usar la bandera --no-ff para que siempre se cree un commit de unión; esto mantiene el historial mucho más claro y organizado, permitiéndonos ver exactamente cuándo se integró una característica.
+* **Comandos:** git merge `<branch>`, git merge --no-ff `<branch>`.
