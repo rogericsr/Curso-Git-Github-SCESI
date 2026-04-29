@@ -136,3 +136,7 @@ Las ramas son bifurcaciones que nos permiten crear caminos paralelos para la evo
 ### Git merge
 Para unir el trabajo de dos ramas usamos git merge. Git puede hacerlo de forma automática si no hay conflictos (Fast-forward), pero lo ideal es usar la bandera --no-ff para que siempre se cree un commit de unión; esto mantiene el historial mucho más claro y organizado, permitiéndonos ver exactamente cuándo se integró una característica.
 * **Comandos:** git merge `<branch>`, git merge --no-ff `<branch>`.
+
+### GitFlow: Organized Workflow
+GitFlow es una metodología que asigna roles específicos a cada rama para que el proyecto sea estable. Tenemos ramas eternas como main (código en producción) y develop (base para el desarrollo), junto a ramas de apoyo como feature/* para nuevas funciones, release/* para preparar versiones y hotfix/* para arreglar errores críticos directamente en producción.
+ * **Nomenclatura:** feature/new-feature, release/v 1.0, hotfix/security-patch.
