@@ -126,3 +126,9 @@ salvo que hagas:
 git checkout <hash_commit_creado>
 git checkout -b rama_nueva
 ```
+
+## Clase 5
+### Git Branching: Parallel Universes
+
+Las ramas son bifurcaciones que nos permiten crear caminos paralelos para la evolución del código. Esto es fundamental para trabajar en equipo, ya que podemos listar las ramas con git branch, crear nuevas para tareas específicas y borrar aquellas que ya no necesitemos una vez fusionadas.
+* **Comandos:** git branch (listar), git branch `<name>` (crear), git branch -D `<name>` (borrar).
