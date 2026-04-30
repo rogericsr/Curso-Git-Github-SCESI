@@ -140,3 +140,6 @@ Para unir el trabajo de dos ramas usamos git merge. Git puede hacerlo de forma a
 ### GitFlow: Organized Workflow
 GitFlow es una metodología que asigna roles específicos a cada rama para que el proyecto sea estable. Tenemos ramas eternas como main (código en producción) y develop (base para el desarrollo), junto a ramas de apoyo como feature/* para nuevas funciones, release/* para preparar versiones y hotfix/* para arreglar errores críticos directamente en producción.
  * **Nomenclatura:** feature/new-feature, release/v 1.0, hotfix/security-patch.
+ ## Clase 6
+ ### Git fetch
+Es un comando de Git que descarga el contenido nuevo de un repositorio remoto a tu máquina local, básicamente, sirve para **mirar** qué han hecho otros colaboradores antes de decidir si quieres integrar sus cambios en tu rama.
