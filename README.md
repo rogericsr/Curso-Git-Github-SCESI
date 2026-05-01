@@ -147,3 +147,6 @@ Es un comando de Git que descarga el contenido nuevo de un repositorio remoto a 
 ## Clase 7
 ### Pull Requests
 Los Pull Requests (o PRs) son solicitudes para unir código a la rama principal. No son solo un paso técnico, sino una medida de seguridad que permite al equipo revisar los cambios, debatir mejoras y evitar que se introduzca código malicioso o con errores antes de que afecte al proyecto base. Para poder hacer un pull request puede mirar el [siguiente tutorial](https://youtu.be/4CeMKqloOJc?si=CoJmQFnCWTanwn1M).
+### Flujo de Trabajo con PRs
+Para trabajar correctamente con PRs, debemos seguir un orden: descargar lo último de la rama base (develop), trabajar en nuestra propia rama, y antes de subirla, asegurarnos de integrar cualquier cambio nuevo de develop para resolver conflictos localmente antes de pedir la revisión en GitHub.
+ * **Comandos clave:** git fetch, git pull origin develop, git merge develop (antes de subir la rama).
