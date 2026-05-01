@@ -143,3 +143,7 @@ GitFlow es una metodología que asigna roles específicos a cada rama para que e
  ## Clase 6
  ### Git fetch
 Es un comando de Git que descarga el contenido nuevo de un repositorio remoto a tu máquina local, básicamente, sirve para **mirar** qué han hecho otros colaboradores antes de decidir si quieres integrar sus cambios en tu rama.
+
+## Clase 7
+### Pull Requests
+Los Pull Requests (o PRs) son solicitudes para unir código a la rama principal. No son solo un paso técnico, sino una medida de seguridad que permite al equipo revisar los cambios, debatir mejoras y evitar que se introduzca código malicioso o con errores antes de que afecte al proyecto base. Para poder hacer un pull request puede mirar el [siguiente tutorial](https://youtu.be/4CeMKqloOJc?si=CoJmQFnCWTanwn1M).
